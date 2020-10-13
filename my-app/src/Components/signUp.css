@@ -1,0 +1,181 @@
+.main{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.sign-in{
+    display: flex;
+}
+.form-title{
+  font-weight: bold;
+  font-size: 30px;
+}
+.form-para{
+  font-weight: bold;
+  font-size: 20px;
+}
+.para-lite{
+  font-weight: bold;
+  color: #b1b1b1;
+}
+.signin-image img{
+  width: 100%;
+  height: 100%;
+}
+.signin-image{
+  filter: brightness(80%);
+}
+.signin-form{
+    width: 50%;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+  width:auto;
+ height: fit-content; 
+}
+.display_errors{
+  color: red;
+}
+
+.container{
+  padding: 30px;
+  margin: auto;
+}
+input[type=text],input[type=password],input[type=email],select{
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  } 
+input[type=submit]{
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    background-color: red;
+    border: 1px solid red;
+    color : #fff;
+    font-size: large;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+  .forming{
+    position: relative;
+    left: 0;
+    top: -40px;
+    padding: 9px 8px;
+    color: red;
+    transition: .3s;
+    font-size: 18px;
+  }
+
+  .social-login{
+    display: flex;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    flex-direction: column;
+  }
+  .social-login ul li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+  }
+  .social-login ul a{
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .social-label{
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    font-weight: 500;
+    color: #f9f9f9;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  .fb{
+    font-size: 18px;
+    background-color: blue;
+  }
+  .tw{
+    font-size: 18px;
+    background-color: #00acee;
+  }
+  .insta{
+    font-size: 18px;
+    background-color: #f46f30;
+  }
+  .Li{
+    font-size: 18px;
+    background-color: #fd1d1d;
+  }
+  .input[type="checkbox"]{
+    margin-top: 15px;
+    background: #000000;
+    border: #fff 1px solid;
+    font-size: 20px;
+  }
+
+@media screen and (max-width: 1000px) {
+    .signin-image {
+        display: none;
+        visibility: hidden; 
+    }
+    .signin-form{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .container{
+      padding: 20px;
+      margin: 25px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+  .social-login {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column; 
+  }
+  .social-login ul{
+    padding: 0px;
+  }
+  .social-login ul li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+  }
+  .social-login ul a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+   .social-label {
+    margin-right: 0px;
+    margin-bottom: 10px; }
+
+}
